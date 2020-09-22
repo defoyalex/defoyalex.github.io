@@ -8,7 +8,7 @@
     <script type="text/javascript">
         $(document).ready(function(){
         $(".rightImage").hide();
-        $('#myImg4').show();
+        $('#myImg5').show();
         $('#btn1').on("click",function(e){
             $(".rightImage").hide();
             $('#myImg1').show();
@@ -24,6 +24,10 @@
         $('#btn3').on("click",function(e){
             $(".rightImage").hide();
             $('#myImg3').show();
+        });
+        $('#btn5').on("click",function(e){
+            $(".rightImage").hide();
+            $('#myImg5').show();
         });
     });
         </script>
@@ -139,11 +143,13 @@
             <button type="button" id="btn1">Ronde 1</button>
             <button type="button"  id="btn2">Ronde 2</button>
             <button type="button"  id="btn4">Ronde 3</button>
-            <button type="button"  id="btn3">Meilleurs pointeurs - ronde 3</button>
+            <button type="button"  id="btn4">Ronde 4</button>
+            <button type="button"  id="btn3">Meilleurs pointeurs - ronde 4</button>
         </div>
         <img src="ronde1.PNG" alt="ronde1" class="rightImage" id="myImg1"/>
         <img src="ronde2.PNG" alt="ronde2" class="rightImage" id="myImg2"/>
         <img src="ronde3.PNG" alt="ronde3" class="rightImage" id="myImg4"/>
+        <img src="ronde4.PNG" alt="ronde4" class="rightImage" id="myImg5"/>
         <img src="veille.PNG" alt="Pointeurs de la veille" class="rightImage" id="myImg3"/>
                 
         </main>
