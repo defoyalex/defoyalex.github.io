@@ -1,36 +1,9 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>POOL DE VEILLEUX</title>
-</script>
+    <title>Alex Defoy - Portfolio</title>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-        $(".rightImage").hide();
-        $('#myImg5').show();
-        $('#btn1').on("click",function(e){
-            $(".rightImage").hide();
-            $('#myImg1').show();
-        });
-        $('#btn2').on("click",function(e){
-            $(".rightImage").hide();
-            $('#myImg2').show();
-        });
-        $('#btn4').on("click",function(e){
-            $(".rightImage").hide();
-            $('#myImg4').show();
-        });
-        $('#btn3').on("click",function(e){
-            $(".rightImage").hide();
-            $('#myImg3').show();
-        });
-        $('#btn5').on("click",function(e){
-            $(".rightImage").hide();
-            $('#myImg5').show();
-        });
-    });
-        </script>
     <style>
       #Box-container{
         background: white;
@@ -46,15 +19,6 @@
         background-image: linear-gradient(rgba(100,100,100,0), rgba(100,100,100,0.25),rgba(100,100,100,0.35), rgba(100,100,100,0.35), rgba(100,100,100,0.25), rgba(100,100,100,0));
       }
       
-      #box-main {
-        display: flex;
-        flex-direction: column;
-      }
-      
-      #buttons {
-        width: 100%;
-      }
-      
       #description{
         align-self:flex-end;
         margin-right:auto;    
@@ -68,6 +32,7 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        border-radius: 50%;
       }
       
       #image{
@@ -84,12 +49,7 @@
       }
       
       #Left-box{
-        width: 5%;
-      }
-      
-      #myImg{
-        max-width: 75%;
-        height: auto;
+        width: 10%;
       }
       
       #navbar{
@@ -110,9 +70,7 @@
       .project-title{
       
       }
-      .rightImage{
-        width: 95%;
-      }
+      
       #title{
         align-self: center;
         margin-right:auto;
@@ -134,24 +92,27 @@
     <body id="Box-container">
         <div id="Left-box"></div>
         <div id="welcome-section">
-            <header id="header"> <h1> Pool de veilleux <h1> </header>
-            <img id="header-img" src="classement.PNG" alt="hound-Logo">           
+            <header id="header"> <h1> Alex Defoy <h1> </header>
+            <img id="header-img" src="https://i.ibb.co/7XnCShX/hound-Logo.jpg" alt="hound-Logo">
+            <p id="description"> 
+                Student in Computer Science at Université de Montréal. Currently in the 
+                second year of my Bachelor's Degree. Strong interests in programming, 
+                mathematics, data science and machine learning. 
+            </p>
+        <nav id="navbar">
+        <ul>
+            <li><a class="nav-link" href="#projects"></a></li>
+        </ul>
+        </nav>
+                <a class="nav-link" href="https://ca.linkedin.com/in/alex-defoy-533a49164">LinkedIn Profile</a>
+                <a class="nav-link" href="https://github.com/defoyalex">GitHub Profile</a>
+            
         </div>
         <div id="Box-line"></div>
         <main id="Box-main">
-        <div id="buttons">
-            <button type="button" id="btn1">Ronde 1</button>
-            <button type="button"  id="btn2">Ronde 2</button>
-            <button type="button"  id="btn4">Ronde 3</button>
-            <button type="button"  id="btn5">Ronde 4</button>
-            <button type="button"  id="btn3">Meilleurs pointeurs - ronde 4</button>
-        </div>
-        <img src="ronde1.PNG" alt="ronde1" class="rightImage" id="myImg1"/>
-        <img src="ronde2.PNG" alt="ronde2" class="rightImage" id="myImg2"/>
-        <img src="ronde3.PNG" alt="ronde3" class="rightImage" id="myImg4"/>
-        <img src="ronde4.PNG" alt="ronde4" class="rightImage" id="myImg5"/>
-        <img src="veille.PNG" alt="Pointeurs de la veille" class="rightImage" id="myImg3"/>
-                
+            <div id="projects">
+                <a href="responsive2.html">WebPage</a>
+            </div>
         </main>
         <footer> 
         </footer>
