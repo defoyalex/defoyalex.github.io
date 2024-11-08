@@ -7,7 +7,7 @@ document.getElementById('rsvpForm').addEventListener('submit', function(e) {
     // Log the data to ensure it's correctly formatted
     console.log("Data being sent:", { name, attending });
 
-    fetch("https://script.google.com/macros/s/AKfycbzuBV9sxzNhKZsEtM2s52I3E_cHNYAO5FwcsxXkl5xfVDBNNaipDpq5D3h0JqfA8PMTNw/exec", {
+    fetch("https://script.google.com/macros/s/AKfycby1vZm4ORc0EYXEcqga0Za-hPRDKYhI8DBkZr-CRahv6AQK4mJK8xIovwUyuPPqEDKj_w/exec", {
         method: "POST",
         redirect: "follow",
         mode: "no-cors",
