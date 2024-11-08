@@ -4,7 +4,7 @@ document.getElementById('rsvpForm').addEventListener('submit', function(e) {
     const name = document.getElementById('name').value;
     const attending = document.getElementById('attending').value;
 
-    fetch("https://script.google.com/macros/s/AKfycbxF5jR9gwKAuydkvifXvWnLi352LljZ7TyvP6htFViE04fn4OnN2HWAFcXyUKjeQtRa5A/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbzuBV9sxzNhKZsEtM2s52I3E_cHNYAO5FwcsxXkl5xfVDBNNaipDpq5D3h0JqfA8PMTNw/exec", {
         method: "POST",
         mode: "no-cors",
         headers: {
