@@ -9,6 +9,7 @@ document.getElementById('rsvpForm').addEventListener('submit', function(e) {
 
     fetch("https://script.google.com/macros/s/AKfycbzuBV9sxzNhKZsEtM2s52I3E_cHNYAO5FwcsxXkl5xfVDBNNaipDpq5D3h0JqfA8PMTNw/exec", {
         method: "POST",
+        redirect: "follow",
         headers: {
             "Content-Type": "application/json",
         },
