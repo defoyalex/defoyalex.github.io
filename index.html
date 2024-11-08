@@ -1,121 +1,68 @@
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Alex Defoy - Portfolio</title>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <style>
-      #Box-container{
-        background: white;
-        display: flex;
-        height: 100%;
-        font-family: 'Montserrat', serif;
-        font-size: 18px;
-      }
-      
-      #Box-line{
-        width: 0.075%;
-        margin: 1em;
-        background-image: linear-gradient(rgba(100,100,100,0), rgba(100,100,100,0.25),rgba(100,100,100,0.35), rgba(100,100,100,0.35), rgba(100,100,100,0.25), rgba(100,100,100,0));
-      }
-      
-      #description{
-        align-self:flex-end;
-        margin-right:auto;    
-      }
-      
-      #header{
-        text-align: center;
-      }
-      
-      #header-img{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 50%;
-      }
-      
-      #image{
-        max-width: 75%;
-        height: auto;
-        align-self: center;
-      }
-      
-      #img-div{
-        background-color: rgb(245,245,245);
-        display: flex;
-        flex-direction: column;
-        padding: 1em;
-      }
-      
-      #Left-box{
-        width: 10%;
-      }
-      
-      #navbar{
-        position:fixed;
-        top: 0px;
-        left: 0px;
-        color: white;
-      
-      }
-      
-      .nav-link{
-      }
-      
-      #projects{
-      
-      }
-      
-      .project-title{
-      
-      }
-      
-      #title{
-        align-self: center;
-        margin-right:auto;
-      }
-      
-      #welcome-section {
-        width: 25%;
-        text-align: justify;
-        text-justify: inter-word;
-      }
-      
-      @media (max-width: 600px) { 
-        #nav-bar{
-            position: relative;
-           }
-      }
-    </style>
-    </head>
-    <body id="Box-container">
-        <div id="Left-box"></div>
-        <div id="welcome-section">
-            <header id="header"> <h1> Alex Defoy <h1> </header>
-            <img id="header-img" src="portfolio.jpg" alt="Alex Defoy">
-            <p id="description"> 
-                Student in Computer Science at Université de Montréal. Currently in the 
-                last year of my Bachelor's Degree. Strong interests in programming (Java, Python, C), 
-                mathematics, 3D rendering and environment. 
-            </p>
-        <nav id="navbar">
-        <ul>
-            <li><a class="nav-link" href="#projects"></a></li>
-        </ul>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Wedding Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Wedding</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#registry">Registry</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+                <li><a href="#info">Information</a></li>
+            </ul>
         </nav>
-                <a class="nav-link" href="https://ca.linkedin.com/in/alex-defoy-533a49164">LinkedIn Profile</a>
-                <a class="nav-link" href="https://github.com/defoyalex">GitHub Profile</a>
-            
-        </div>
-        <div id="Box-line"></div>
-        <main id="Box-main">
-            <div id="projects">
-                TODO
-            </div>
-        </main>
-        <footer> 
-        </footer>
-    </body>
-  
+    </header>
+
+    <section id="home">
+        <h2>Welcome Message</h2>
+        <p>We are so excited to celebrate our special day with you!</p>
+    </section>
+
+    <section id="registry">
+        <h2>Registry</h2>
+        <p>Find our registry details below. We appreciate your love and support!</p>
+        <!-- Add registry items here -->
+    </section>
+
+    <section id="rsvp">
+        <h2>RSVP</h2>
+        <form id="rsvpForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="attending">Will you attend?</label>
+            <select id="attending" name="attending" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="rsvpResponse"></p>
+    </section>
+
+    <section id="info">
+        <h2>Information</h2>
+        <ul>
+            <li><strong>Dress Code:</strong> Formal</li>
+            <li><strong>Venue:</strong> Beautiful Gardens, Cityville</li>
+            <li><strong>BYOB:</strong> Yes, feel free to bring your favorite drinks</li>
+            <li><strong>Items to Bring:</strong> Your joyful spirit and a camera!</li>
+            <li><strong>Cost:</strong> $100 per night, includes 3 meals</li>
+            <li><strong>Packing List:</strong> Formal attire, comfortable shoes, and a warm jacket</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Thank you for being part of our day!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
