@@ -18,10 +18,10 @@ document.getElementById('rsvpForm').addEventListener('submit', function(e) {
     })
     .then(response => {
         console.log("Response from Google Apps Script:", response);
-        document.getElementById('rsvpResponse').innerText = "RSVP saved successfully!";
+        document.getElementById('rsvpResponse').innerText = "Bravo petit bb!";
     })
     .catch(error => {
-        document.getElementById('rsvpResponse').innerText = "Error saving RSVP.";
+        document.getElementById('rsvpResponse').innerText = "Oh non, il y a eu un problème :(";
         console.error('Error:', error);
     });
 });
